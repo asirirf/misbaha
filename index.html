@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مسبحة الاكترونية</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-weight: bold;
+        }
+        body{
+            background-color: #151F33;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+        }
+        .btnn{
+            width: 200px;
+            height: 50px;
+        text-align: center;
+        border-radius: 25px;
+        display:flex ;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        }
+        .pp{
+            text-align: center;
+            margin-top: 50px;
+            color: #B5B5B5 !important;
+        }
+        .addd{
+            text-decoration: none;
+            color: #029687;
+        }
+        .addd:hover{
+            text-decoration: none;
+            color: #029687;
+            text-align: center;
+        }
+        .counter-btn {
+            background-color: #009688;
+            width: 130px;
+            height: 130px;
+            margin: auto;
+            border-radius: 100px 100px 100px 100px;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px 100px 100px 100px;
+            border: 0 solid #000;
+            color: white;
+            font-size: 24px;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <nav style="background-color: #505766 !important;color:white !important;"
+        class="text-white navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand navbar-brand text-white" style="margin-right: 50px;" href="#">مسبحة الاكترونية</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul style="margin-left: 50px;"
+                    class="d-flex align-items-center justify-content-center navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand text-white btnn" style="background-color: #009688 !important;"
+                            href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">اذكار الصباح</a>
+                    </li><br>
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand text-white btnn" style="background-color: #009688 !important;"
+                            href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">اذكار المساء</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <p class="pp">يمكنك الاستغفار وقراءة اذكار الصباح والمساء تم عمل هاذة المسبحة صدقة جارية لـ يحي عبدالله و موسى
+        عسيري<br> رحمة الله عليهم واسكنهم الله فسيح جناته</p>
+    <section class="add text-center" style="margin-top: 50px;">
+        <div class="card mb-3 wwww" style="width: 18rem;   background: transparent;    margin: 20px;
+        border: 2px solid #eeeeee;
+        color: #009688 !important;margin:auto">
+            <div class="card-header" style="background: #eeeeee !important;">استغفر الله</div>
+            <div class="card-body">
+                <button style="    position: absolute;
+                right: 20px;" class="btn btn-danger clear-counter btn-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z" />
+                        <path
+                            d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z" />
+                    </svg>
+                </button>
+                <div class="counter-btn counter-total counter-total-1" id="total">0</div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="position-absolute bottom-0 start-50 translate-middle-x"
+        style="margin-bottom:50px;text-align:center;">
+        هاذا الوقف يعمل بواسطة<a class="addd" href="https://twitter.com/tm__r1?s=21"> RASHED</a>
+    </section>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">تصفير زر الاستغفار</h5>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="    margin: 0 !important;"></button>
+        </div>
+        <div class="modal-body text-center text-dark">
+          هل انت متأكد من انك تريد تصفير زر الاستغفار
+        </div>
+        <div class="modal-footer" dir="rtl">
+            <button type="button" class="btn btn-danger" id="clearall">تصفير</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">الغاء</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-- Modal2 -->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">اذكار الصباح</h5>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="    margin: 0 !important;"></button>
+        </div>
+        <div class="modal-body text-right text-dark">
+            (( ﺃﺻﺒﺤﻨﺎ ﻭ ﺃﺻﺒﺢ ﺍﻟﻤﻠﻚ ﻟﻠﻪ، ﻭ ﺍﻟﺤﻤﺪ ﻟﻠﻪ، ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ ﻭ ﻟﻪ ﺍﻟﺤﻤﺪ ﻭ ﻫﻮ ﻋﻠﻰ ﻛﻞ ﺷﻲﺀ ﻗﺪﻳﺮ ﺭﺏِّ ﺃﺳﺄﻟﻚ ﺧﻴﺮ ﻣﺎ ﻓﻲ ﻫﺬﺍ ﺍﻟﻴﻮﻡ ﻭ ﺧﻴﺮ ﻣﺎ ﺑﻌﺪﻩ ﻭ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻣﺎ ﻓﻲ ﻫﺬﺍ ﺍﻟﻴﻮﻡ ﻭ ﺷﺮ ﻣﺎ ﺑﻌﺪﻩ ﺭﺏِّ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺍﻟﻜﺴﻞ ﻭ ﺳﻮﺀ ﺍﻟﻜﺒﺮ، ﺭﺏَّ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﻋﺬﺍﺏٍ ﻓﻲ ﺍﻟﻨﺎﺭ ﻭ ﻋﺬﺍﺏ ﻓﻲ ﺍﻟﻘﺒﺮ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﻣﺴﻠﻢ: 2088]
+                        <br>
+            <br>
+            (( ﺍﻟﻠﻬﻢ ﺑﻚ ﺃﺻﺒﺤﻨﺎ، ﻭ ﺑﻚ ﺃﻣﺴﻴﻨﺎ، ﻭ ﺑﻚ ﻧﺤﻴﺎ، ﻭ ﺑﻚ ﻧﻤﻮﺕ، ﻭ ﺇﻟﻴﻚ ﺍﻟﻨﺸﻮﺭ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﺍﻟﺼﺤﻴﺤﺔ: 262]
+            <br>
+            <br>
+            ( ﺭﺿﻴﺖ ﺑﺎﻟﻠﻪ ﺭﺑﺎ، ﻭ ﺑﺎﻹﺳﻼﻡ ﺩﻳﻨﺎ، ﻭ ﺑﻤﺤﻤﺪ ﻧﺒﻴﺎ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺍﻟﺼﺤﻴﺤﺔ: 2686]
+            <br>
+            <br>
+(( ﺳﺒﺤﺎﻥ ﺍﻟﻠﻪ ﻭ ﺑﺤﻤﺪﻩ ﻋﺪﺩ ﺧﻠﻘﻪ، ﻭ ﺭﺿﺎ ﻧﻔﺴﻪ، ﻭ ﺯﻧﺔ ﻋﺮﺷﻪ، ﻭ ﻣﺪﺍﺩ ﻛﻠﻤﺎﺗﻪ ))
+ﺛﻼﺙ ﻣﺮﺍﺕ
+[ﺍﻟﺼﺤﻴﺤﺔ: 2156]
+            <br>
+            <br>
+(( ﻣﺎ ﺃﺻﺒﺤﺖ ﻏﺪﺍﺓ ﻗﻂ ﺇﻻ ﺍﺳﺘﻐﻔﺮﺕ ﺍﻟﻠﻪ ﻓﻴﻬﺎ ﻣﺎﺋﺔ ﻣﺮﺓ ))
+[ﺍﻟﺼﺤﻴﺤﺔ: 1600]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﺃﻧﺖ ﺭﺑﻲ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺧﻠﻘﺘﻨﻲ ﻭ ﺃﻧﺎ ﻋﺒﺪﻙ، ﻭ ﺃﻧﺎ ﻋﻠﻰ ﻋﻬﺪﻙ ﻭ ﻭﻋﺪﻙ ﻣﺎ ﺍﺳﺘﻄﻌﺖ، ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻣﺎ ﺻﻨﻌﺖ، ﺃﺑﻮﺀ ﻟﻚ ﺑﻨﻌﻤﺘﻚ ﻋﻠﻲ، ﻭ ﺃﺑﻮﺀ ﻟﻚ ﺑﺬﻧﺒﻲ، ﻓﺎﻏﻔﺮ ﻟﻲ؛ ﻓﺈﻧﻪ ﻻ ﻳﻐﻔﺮ ﺍﻟﺬﻧﻮﺏ ﺇﻻ ﺃﻧﺖ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﻣﺨﺘﺼﺮ ﺍﻟﺒﺨﺎﺭﻱ: 2420]
+            <br>
+            <br>
+(( ﻳﺎ ﺣﻲ ﻳﺎ ﻗﻴﻮﻡ ﺑﺮﺣﻤﺘﻚ ﺃﺳﺘﻐﻴﺚ، ﺃﺻﻠﺢ ﻟﻲ ﺷﺄﻧﻲ ﻛﻠﻪ، ﻭ ﻻ ﺗﻜﻠﻨﻲ ﺇﻟﻰ ﻧﻔﺴﻲ ﻃﺮﻓﺔ ﻋﻴﻦ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﺘﺮﻏﻴﺐ: 661]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﻋﺎﻟﻢ ﺍﻟﻐﻴﺐ ﻭ ﺍﻟﺸﻬﺎﺩﺓ، ﻓﺎﻃﺮ ﺍﻟﺴﻤﻮﺍﺕ ﻭ ﺍﻷﺭﺽ، ﺭﺏ ﻛﻞ ﺷﻲﺀ ﻭ ﻣﻠﻴﻜﻪ، ﺃﺷﻬﺪ ﺃﻥ ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻧﻔﺴﻲ، ﻭ ﺷﺮ ﺍﻟﺸﻴﻄﺎﻥ ﻭﺷﺮﻛﻪ، ﻭ ﺃﻥ ﺃﻗﺘﺮﻑ ﻋﻠﻰ ﻧﻔﺴﻲ ﺳﻮﺀﺍ ﺃﻭ ﺃﺟﺮﻩ ﺇﻟﻰ ﻣﺴﻠﻢ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﻜﻠﻢ: 21]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﺳﺄﻟﻚ ﺍﻟﻌﺎﻓﻴﺔ ﻓﻲ ﺍﻟﺪﻧﻴﺎ ﻭ ﺍﻵﺧﺮﺓ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﺳﺄﻟﻚ ﺍﻟﻌﻔﻮ ﻭ ﺍﻟﻌﺎﻓﻴﺔ ﻓﻲ ﺩﻳﻨﻲ، ﻭ ﺩﻧﻴﺎﻱ، ﻭ ﺃﻫﻠﻲ، ﻭ ﻣﺎﻟﻲ، ﺍﻟﻠﻬﻢ ﺍﺳﺘﺮ ﻋﻮﺭﺍﺗﻲ ﻭ ﺁﻣﻦ ﺭﻭﻋﺎﺗﻲ، ﺍﻟﻠﻬﻢ ﺍﺣﻔﻈﻨﻲ ﻣﻦ ﺑﻴﻦ ﻳﺪﻱ، ﻭ ﻣﻦ ﺧﻠﻔﻲ، ﻭ ﻋﻦ ﻳﻤﻴﻨﻲ، ﻭ ﻋﻦ ﺷﻤﺎﻟﻲ، ﻭ ﻣﻦ ﻓﻮﻗﻲ، ﻭ ﺃﻋﻮﺫ ﺑﻌﻈﻤﺘﻚ ﺃﻥ ﺃﻏﺘﺎﻝ ﻣﻦ ﺗﺤﺘﻲ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﻜﻠﻢ: 23]
+            <br>
+            <br>
+(( ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ، ﻭ ﻟﻪ ﺍﻟﺤﻤﺪ، ﻭ ﻫﻮ ﻋﻠﻰ ﻛﻞ ﺷﻲﺀ ﻗﺪﻳﺮ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﺘﺮﻏﻴﺐ: 656]
+            <br>
+            <br>
+(( ﺑﺴﻢ ﺍﻟﻠﻪ ﺍﻟﺬﻱ ﻻ ﻳﻀﺮ ﻣﻊ ﺍﺳﻤﻪ ﺷﻲﺀ؛ ﻓﻲ ﺍﻷﺭﺽ ﻭ ﻻ ﻓﻲ ﺍﻟﺴﻤﺎﺀ ﻭ ﻫﻮ ﺍﻟﺴﻤﻴﻊ ﺍﻟﻌﻠﻴﻢ ))
+ﺛﻼﺙ ﻣﺮﺍﺕ
+[ﺻﺤﻴﺢ ﺍﻟﺘﺮﻣﺬﻱ: 3388]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺑﺪﻧﻲ، ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺳﻤﻌﻲ، ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺑﺼﺮﻱ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺍﻟﻜﻔﺮ ﻭ ﺍﻟﻔﻘﺮ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﻋﺬﺍﺏ ﺍﻟﻘﺒﺮ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ ))
+ﺛﻼﺙ ﻣﺮﺍﺕ
+[ﺻﺤﻴﺢ ﺃﺑﻲ ﺩﺍﻭﺩ: 5090]
+            <br>
+            <br>
+(( ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ ﻭ ﻟﻪ ﺍﻟﺤﻤﺪ ﻳﺤﻴﻲ ﻭ ﻳﻤﻴﺖ
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Modal3 -->
+<div class="modal fade " id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content ">
+        <div class="modal-header">
+            <h5 class="modal-title text-dark" id="exampleModalLabel">اذكار المساء</h5>
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="    margin: 0 !important;"></button>
+        </div>
+        <div class="modal-body modal-dialog modal-dialog-scrollable text-right text-dark">
+            (( ﺃﻣﺴﻴﻨﺎ ﻭ ﺃﻣﺴﻰ ﺍﻟﻤﻠﻚ ﻟﻠﻪ، ﻭﺍﻟﺤﻤﺪ ﻟﻠﻪ، ﻭﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ ﻭﻟﻪ ﺍﻟﺤﻤﺪ ﻭﻫﻮ ﻋﻠﻰ ﻛﻞ ﺷﻲﺀ ﻗﺪﻳﺮ، ﺭﺏ ﺃﺳﺄﻟﻚ ﺧﻴﺮ ﻣﺎ ﻓﻲ ﻫﺬﻩ ﺍﻟﻠﻴﻠﺔ ﻭﺧﻴﺮ ﻣﺎ ﺑﻌﺪﻫﺎ، ﻭﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻫﺬﻩ ﺍﻟﻠﻴﻠﺔ ﻭﺷﺮ ﻣﺎ ﺑﻌﺪﻫﺎ، ﺭﺏ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺍﻟﻜﺴﻞ ﻭﺳﻮﺀ ﺍﻟﻜﺒﺮ، ﺭﺏ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﻋﺬﺍﺏ ﻓﻲ ﺍﻟﻨﺎﺭ ﻭﻋﺬﺍﺏ ﻓﻲ ﺍﻟﻘﺒﺮ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﻣﺨﺘﺼﺮ ﻣﺴﻠﻢ: 1894]
+            <br>
+            (( ﺃﻋﻮﺫ ﺑﻜﻠﻤﺎﺕ ﺍﻟﻠﻪ ﺍﻟﺘﺎﻣﺎﺕ ﻣﻦ ﺷﺮ ﻣﺎ ﺧﻠﻖ ))
+            ﺛﻼﺙ ﻣﺮﺍﺕ
+            [ﻣﺨﺘﺼﺮ ﻣﺴﻠﻢ: 1453]
+            <br>
+                        <br>
+            (( ﺍﻟﻠﻬﻢ ﺑﻚ ﺃﻣﺴﻴﻨﺎ ﻭﺑﻚ ﺃﺻﺒﺤﻨﺎ، ﻭﺑﻚ ﻧﺤﻴﺎﻭﺑﻚ ﻧﻤﻮﺕ، ﻭﺇﻟﻴﻚ ﺍﻟﻤﺼﻴﺮ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﺍﻟﺼﺤﻴﺤﺔ: 262]
+            <br>
+                        <br>
+            (( ﺍﻟﻠﻬﻢ ﺃﻧﺖ ﺭﺑﻲ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺧﻠﻘﺘﻨﻲ ﻭﺃﻧﺎ ﻋﺒﺪﻙ، ﻭﺃﻧﺎ ﻋﻠﻰ ﻋﻬﺪﻙ ﻭﻭﻋﺪﻙ ﻣﺎ ﺍﺳﺘﻄﻌﺖ، ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻣﺎ ﺻﻨﻌﺖ، ﺃﺑﻮﺀ ﻟﻚ ﺑﻨﻌﻤﺘﻚ ﻋﻠﻲ، ﻭﺃﺑﻮﺀ ﻟﻚ ﺑﺬﻧﺒﻲ، ﻓﺎﻏﻔﺮ ﻟﻲ؛ ﻓﺈﻧﻪ ﻻ ﻳﻐﻔﺮ ﺍﻟﺬﻧﻮﺏ ﺇﻻ ﺃﻧﺖ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﻣﺨﺘﺼﺮ ﺍﻟﺒﺨﺎﺭﻱ: 2420]
+            <br>
+                        <br>
+            (( ﻳﺎ ﺣﻲ ﻳﺎ ﻗﻴﻮﻡ ﺑﺮﺣﻤﺘﻚ ﺃﺳﺘﻐﻴﺚ، ﺃﺻﻠﺢ ﻟﻲ ﺷﺄﻧﻲ ﻛﻠﻪ، ﻭﻻ ﺗﻜﻠﻨﻲ ﺇﻟﻰ ﻧﻔﺴﻲ ﻃﺮﻓﺔ ﻋﻴﻦ ))
+            ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+            [ﺻﺤﻴﺢ ﺍﻟﺘﺮﻏﻴﺐ: 661]
+            <br>
+            <br>
+            (( ﺍﻟﻠﻬﻢ ﻋﺎﻟﻢ ﺍﻟﻐﻴﺐ ﻭﺍﻟﺸﻬﺎﺩﺓ، ﻓﺎﻃﺮ ﺍﻟﺴﻤﻮﺍﺕ ﻭﺍﻷﺭﺽ، ﺭﺏ ﻛﻞ ﺷﻲﺀ ﻭﻣﻠﻴﻜﻪ، ﺃﺷﻬﺪ ﺃﻥ ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺷﺮ ﻧﻔﺴﻲ، ﻭﺷﺮ ﺍﻟﺸﻴﻄﺎﻥ ﻭﺷﺮﻛﻪ، ﻭﺃﻥ ﺃﻗﺘﺮﻑ ﻋﻠﻰ ﻧﻔﺴﻲ ﺳﻮﺀﺍ ﺃﻭ ﺃﺟﺮﻩ ﺇﻟﻰ ﻣﺴﻠﻢ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﻜﻠﻢ: 21]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﺳﺄﻟﻚ ﺍﻟﻌﺎﻓﻴﺔ ﻓﻲ ﺍﻟﺪﻧﻴﺎ ﻭﺍﻵﺧﺮﺓ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﺳﺄﻟﻚ ﺍﻟﻌﻔﻮ ﻭﺍﻟﻌﺎﻓﻴﺔ ﻓﻲ ﺩﻳﻨﻲ، ﻭﺩﻧﻴﺎﻱ، ﻭﺃﻫﻠﻲ، ﻭﻣﺎﻟﻲ، ﺍﻟﻠﻬﻢ ﺍﺳﺘﺮ ﻋﻮﺭﺍﺗﻲ ﻭﺁﻣﻦ ﺭﻭﻋﺎﺗﻲ، ﺍﻟﻠﻬﻢ ﺍﺣﻔﻈﻨﻲ ﻣﻦ ﺑﻴﻦ ﻳﺪﻱ، ﻭﻣﻦ ﺧﻠﻔﻲ، ﻭﻋﻦ ﻳﻤﻴﻨﻲ، ﻭﻋﻦ ﺷﻤﺎﻟﻲ، ﻭﻣﻦ ﻓﻮﻗﻲ، ﻭﺃﻋﻮﺫ ﺑﻌﻈﻤﺘﻚ ﺃﻥ ﺃﻏﺘﺎﻝ ﻣﻦ ﺗﺤﺘﻲ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﻜﻠﻢ: 23]
+            <br>
+            <br>
+(( ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ، ﻭﻟﻪ ﺍﻟﺤﻤﺪ، ﻭﻫﻮ ﻋﻠﻰ ﻛﻞ ﺷﻲﺀ ﻗﺪﻳﺮ ))
+ﻣﺮﺓ ﻭﺍﺣﺪﺓ
+[ﺻﺤﻴﺢ ﺍﻟﺘﺮﻏﻴﺐ: 656]
+            <br>
+            <br>
+(( ﺑﺴﻢ ﺍﻟﻠﻪ ﺍﻟﺬﻱ ﻻ ﻳﻀﺮ ﻣﻊ ﺍﺳﻤﻪ ﺷﻲﺀ؛ ﻓﻲ ﺍﻷﺭﺽ ﻭﻻ ﻓﻲ ﺍﻟﺴﻤﺎﺀ ﻭﻫﻮ ﺍﻟﺴﻤﻴﻊ ﺍﻟﻌﻠﻴﻢ ))
+ﺛﻼﺙ ﻣﺮﺍﺕ
+[ﺻﺤﻴﺢ ﺍﻟﺘﺮﻣﺬﻱ: 3388]
+            <br>
+            <br>
+(( ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺑﺪﻧﻲ، ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺳﻤﻌﻲ، ﺍﻟﻠﻬﻢ ﻋﺎﻓﻨﻲ ﻓﻲ ﺑﺼﺮﻱ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﺍﻟﻜﻔﺮ ﻭﺍﻟﻔﻘﺮ، ﺍﻟﻠﻬﻢ ﺇﻧﻲ ﺃﻋﻮﺫ ﺑﻚ ﻣﻦ ﻋﺬﺍﺏ ﺍﻟﻘﺒﺮ، ﻻ ﺇﻟﻪ ﺇﻻ ﺃﻧﺖ ))
+ﺛﻼﺙ ﻣﺮﺍﺕ
+[ﺻﺤﻴﺢ ﺃﺑﻲ ﺩﺍﻭﺩ: 5090]
+            <br>
+            <br>
+(( ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠﻪ ﻭﺣﺪﻩ ﻻ ﺷﺮﻳﻚ ﻟﻪ، ﻟﻪ ﺍﻟﻤﻠﻚ ﻭﻟﻪ ﺍﻟﺤﻤﺪ ﻳﺤﻴﻲ ﻭﻳﻤﻴﺖ ﻭﻫﻮ ﻋﻠﻰ ﻛﻞ ﺷﻲﺀ ﻗﺪﻳﺮ ))
+ﻋﺸﺮ ﻣﺮﺍﺕ
+[ﺍﻟﺼﺤﻴﺤﺔ: 2563]
+            <br>
+            <br>
+(( ﺳﺒﺤﺎﻥ ﺍﻟﻠﻪ ﻭﺑﺤﻤﺪﻩ ))
+ﻣﺎﺋﺔ ﻣﺮﺓ
+[ﻣﺨﺘﺼﺮ ﻣﺴﻠﻢ: 11903]
+            <br>
+            <br>
+(( ﺳﺒﺤﺎﻥ ﺍﻟﻠﻪ )) . ﻣﺎﺋﺔ ﻣﺮﺓ .(( ﺍﻟﺤﻤﺪ ﻟﻠﻪ )) . ﻣﺎﺋﺔ ﻣﺮﺓ .(( ﺍﻟﻠﻪ ﺃﻛﺒﺮ )) . ﻣﺎﺋﺔ ﻣﺮﺓ .
+(( ﻻ ﺇﻟﻪ ﺇﻻ ﺍﻟﻠ
+        </div>
+        <div class="modal-footer text-center">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">خروج</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        const totalButton = document.getElementById('total');
+        let currentValue = localStorage.getItem('count') || 0;
+
+        totalButton.innerHTML = currentValue;
+            
+        totalButton.addEventListener('click', () => {
+          totalButton.innerHTML = ++currentValue;
+          localStorage.setItem('count', currentValue);
+        });
+        document.getElementById("clearall").addEventListener('click' , function(){
+            document.getElementById("total").innerText = 0;
+            localStorage.removeItem("count");
+            location.reload();
+        })
+    </script>
+</body>
+</html>
